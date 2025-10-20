@@ -48,8 +48,8 @@ Result: 50
 ---
 
 ## 📝 Author
-**Your Name**  
-📧 your.email@example.com
+**Aashik Reddy**  
+📧 aashikreddythatiparthi03@gmail.com
 
 ---
 
