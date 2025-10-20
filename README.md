@@ -10,8 +10,8 @@ It allows the user to perform arithmetic operations like **Addition, Subtraction
 - Menu-driven interface for user convenience  
 - Performs Addition, Subtraction, Multiplication, and Division  
 - Handles **division by zero** using exception handling  
+- Asks user whether to continue (yes/no) after each calculation  
 - Clean and easy-to-understand code using methods for each operation  
-- Loops until the user decides to exit  
 
 ---
 
@@ -55,6 +55,8 @@ Enter first number: 10
 Enter second number: 5
 Result: 15.0
 
+Do you want to perform another calculation? (yes/no): yes
+
 --- Basic Calculator ---
 1. Addition
 2. Subtraction
@@ -66,13 +68,7 @@ Enter first number: 25
 Enter second number: 0
 Division by zero is not allowed
 
---- Basic Calculator ---
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-0. Exit
-Enter your choice: 0
+Do you want to perform another calculation? (yes/no): no
 Exiting Calculator. Goodbye!
 ```
 
