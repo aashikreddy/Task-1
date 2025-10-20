@@ -1,12 +1,17 @@
 import java.util.*;
+
 public class BasicCalculator1 {
-    //Method for addition
+
+    // Method for addition
     public static double add(double a, double b) { return a + b; }
-    //Method for substraction
+
+    // Method for subtraction
     public static double subtract(double a, double b) { return a - b; }
-    //Method for multiplication
+
+    // Method for multiplication
     public static double multiply(double a, double b) { return a * b; }
-    //Method for division
+
+    // Method for division
     public static double divide(double a, double b) {
         if (b == 0) throw new ArithmeticException("Division by zero is not allowed");
         return a / b;
@@ -16,15 +21,20 @@ public class BasicCalculator1 {
         Scanner scanner = new Scanner(System.in);
         double a, b;
         int choice;
+        String again;
+
+        System.out.println("--- Basic Calculator ---");
+
         do {
-            System.out.println("\n--- Basic Calculator ---");
-            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n0. Exit");
+            System.out.println("\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n0. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
 
             if (choice == 0) break;
+
             System.out.print("Enter first number: ");
             a = scanner.nextDouble();
+
             System.out.print("Enter second number: ");
             b = scanner.nextDouble();
 
@@ -41,9 +51,17 @@ public class BasicCalculator1 {
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
             }
-        } while (choice != 0);
 
-        System.out.println("Exiting Calculator. Goodbye!");
+            System.out.print("\nDo you want to perform another calculation? (yes/no): ");
+            again = scanner.next();
+
+            if (again.equalsIgnoreCase("no")) {
+                System.out.println("Exiting Calculator. Goodbye!");
+                break;
+            }
+
+        } while (true);
+
         scanner.close();
     }
 }
