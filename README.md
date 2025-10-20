@@ -1,35 +1,40 @@
 # 🧮 Basic Calculator (Java)
 
 ## 📘 Project Overview
-This is a simple **Basic Calculator** program written in Java.  
-It performs basic arithmetic operations like **addition, subtraction, multiplication, and division** using user input.
+This is a **menu-driven Basic Calculator** program written in Java.  
+It allows the user to perform arithmetic operations like **Addition, Subtraction, Multiplication, and Division** repeatedly until they choose to exit.
 
 ---
 
 ## ⚙️ Features
-- Addition, Subtraction, Multiplication, and Division  
-- Takes input from the user via console  
-- Displays results with clear output messages  
-- Handles invalid inputs gracefully  
+- Menu-driven interface for user convenience  
+- Performs Addition, Subtraction, Multiplication, and Division  
+- Handles **division by zero** using exception handling  
+- Clean and easy-to-understand code using methods for each operation  
+- Loops until the user decides to exit  
 
 ---
 
 ## 🧰 Technologies Used
 - **Language:** Java  
-- **IDE:** Any Java-supported IDE (e.g., VS Code, IntelliJ IDEA, Eclipse)
+- **JDK Version:** 8 or above  
+- **IDE:** Any Java-supported IDE (e.g., IntelliJ IDEA, Eclipse, VS Code)  
 
 ---
 
 ## 🚀 How to Run the Program
+
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/your-username/BasicCalculator.git
    cd BasicCalculator
    ```
+
 2. Compile the Java file:
    ```bash
    javac BasicCalculator1.java
    ```
+
 3. Run the program:
    ```bash
    java BasicCalculator1
@@ -39,10 +44,36 @@ It performs basic arithmetic operations like **addition, subtraction, multiplica
 
 ## 🧪 Sample Output
 ```
+--- Basic Calculator ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+0. Exit
+Enter your choice: 1
 Enter first number: 10
 Enter second number: 5
-Choose operation (+, -, *, /): *
-Result: 50
+Result: 15.0
+
+--- Basic Calculator ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+0. Exit
+Enter your choice: 4
+Enter first number: 25
+Enter second number: 0
+Division by zero is not allowed
+
+--- Basic Calculator ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+0. Exit
+Enter your choice: 0
+Exiting Calculator. Goodbye!
 ```
 
 ---
